@@ -9,16 +9,13 @@ Vi har skrivit C++ i Arduino IDE. Här nedan förklaras lite av det man bör ha 
 
 Här är ett exempel på kod, skrivet i Arduino med C++, som får en inbyggd led-lampa på en mikrocontroller att tända och släckas med en sekunds mellanrum. 
 
-
-
-
+![image](https://github.com/ako26001/nodemcu-01/blob/b9c1e65ce0f417f51cf756074b70b028ab16c8e4/kod.png)
 
 Där det nu står 0 och 1 kan man också skriva andra instruktioner. Tex high och low.  
 
 ## Överföra till mikroprocessor  
 När man har skrivit sin kod kan man tyvärr inte bara koppla en sladd mellan sin dator och mikroprocessorn. Det är några steg som man måste göra för att kunna föra över sin kod till mikroprocessorn. Dessa visas i bilden nedan.
-
-
+![image](https://github.com/ako26001/nodemcu-01/blob/b9c1e65ce0f417f51cf756074b70b028ab16c8e4/source.to.executable.png) 
 
 * Source code - Det här är människoskriven kod som skrivs i ett programmeringsspråk.
 * Compiler - Här översätts source code till object code.
