@@ -7,7 +7,7 @@ Vi har skrivit C++ i Arduino IDE. Här nedan förklaras lite av det man bör ha 
 * void setup - Det som skrivs här kommer att köras först och bara en gång. Tex etablera kontakt med en sensor. 
 * void loop - Det som skrivs här kommer att köras efter det i void setup och kommer att göra det om och om igen. Tex läsa av värden från sensor.
 
-Här är ett exempel på kod, skrivet i Arduino med C++, som får en inbyggd led-lampa på en mikrocontroller att tända och släckas med en sekunds mellanrum. 
+Här är ett exempel på kod, skrivet i Arduino med C++, som får en inbyggd led-lampa på en mikrocontroller att tändas och släckas med en sekunds mellanrum. 
 
 ![image](https://github.com/ako26001/nodemcu-01/blob/b9c1e65ce0f417f51cf756074b70b028ab16c8e4/kod.png)
 
@@ -25,4 +25,9 @@ När man har skrivit sin kod kan man tyvärr inte bara koppla en sladd mellan si
 * Executable file - Den slutgiltiga koden som är redo att laddas över till mikroprocessorn.
 
 ## ESD i samband med mikroprocessorer
-ESD står för electrostatic discharge vilket på svenska är elektrostatisk urladdning. Det är en rusning av statisk laddning från ett objekt till ett annat. Det är detta som sker vid åska och när man får en stöt av ett föremål. 
+ESD står för electrostatic discharge vilket på svenska är elektrostatisk urladdning. Det är en rusning av statisk laddning från ett objekt till ett annat. Exempel på det är åska och när man får en stöt av ett föremål. Detta kan vara skadligt för elektronik. Därför vill vi inte röra vid pinnarna på en mikroprocessor och riskera att den går sönder.
+
+#### Hur man kan undvika det:
+* ESD-matta som är kopplad till jord.
+* ESD-armband som är kopplat till jord.
+* Rör inte vid pinnarna. Rör själva kortet eller sätt det på en svamp och rör vid svampen.
