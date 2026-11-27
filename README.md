@@ -8,9 +8,19 @@ Vi har skrivit C++ i Arduino IDE. Här nedan förklaras lite av det man bör ha 
 * void loop - Det som skrivs här kommer att köras efter det i void setup och kommer att göra det om och om igen. Tex läsa av värden från sensor.
 
 Här är ett exempel på kod, skrivet i Arduino med C++, som får en inbyggd led-lampa på en mikrocontroller att tändas och släckas med en sekunds mellanrum. 
+``` C++
 
-![image](https://github.com/ako26001/nodemcu-01/blob/b9c1e65ce0f417f51cf756074b70b028ab16c8e4/kod.png)
+void setup() {
+pinMode(LED_BUILTIN, OUTPUT);
+}
 
+void loop() {
+digitalWrite(LED_BUILTIN, 0);
+delay(1000);
+digitalWrite(LED_BUILTIN, 1);
+delay(1000;)
+}
+```
 Där det nu står 0 och 1 kan man också skriva andra instruktioner. Tex high och low.  
 
 ## Överföra till mikroprocessor  
